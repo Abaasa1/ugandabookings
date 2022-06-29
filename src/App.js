@@ -9,6 +9,9 @@ import About from "./pages/About";
 import SignUp from "./pages/SignUp";
 import Error404 from "./pages/Error404";
 import SignIn from "./pages/SignIn";
+import Experiences from "./pages/Experiences";
+import Destinations from "./pages/Destinations";
+import Blogs from "./pages/Blogs";
 
 function App() {
   return (
@@ -24,6 +27,9 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/sign-up" element={<SignUp />} />
         <Route path="/sign-in" element={<SignIn />} />
+        <Route path="/experiences" element={<Experiences />} />
+        <Route path="/destinations" element={<Destinations />} />
+        <Route path="/blogs" element={<Blogs />} />
         <Route path="/*" element={<Error404 />} />
       </Routes>
       <Footer />

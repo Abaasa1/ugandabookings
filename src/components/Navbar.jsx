@@ -69,10 +69,10 @@ const Navbar = () => {
           className={
             !nav
               ? "fixed left-[-100%] ease-out duration-[800]"
-              : "fixed left-0 top-0 w-[60%] min-h-screen bg-primary text-white border-r border-r-white ease-in-out duration-500"
+              : "fixed !z-[70] left-0 top-0 w-[60%] min-h-screen bg-primary text-white border-r border-r-white ease-in-out duration-500"
           }
         >
-          <ul className="pt-24 uppercase p-4">
+          <ul className="pt-24 uppercase p-4 !z-[65]">
             <li className="p-4 border-b border-white-600">
               <Link to="/" onClick={handleNavBarClick}>
                 Home

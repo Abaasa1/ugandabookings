@@ -21,11 +21,11 @@ function SignIn() {
             <div></div>
             <p className=" float-left text-[1.5rem]">Sign In</p>
             <div className="float-right">
-              <a href="/" className="text-primary font-semibold">
+              <Link to="/" className="text-primary font-semibold">
                 <p className=" float-left text-[1rem] mt-3 pr-1">Back Home</p>
 
                 <AiOutlineArrowRight className="float-right mt-4" />
-              </a>
+              </Link>
             </div>
           </div>
           <div className=" clear-both"></div>
@@ -34,14 +34,14 @@ function SignIn() {
           <div>
             <p>
               If you do not have an account you can{" "}
-              <a href="/sign-up" className="text-primary font-bold">
+              <Link to="/sign-up" className="text-primary font-bold">
                 Register Here
-              </a>
+              </Link>
             </p>
           </div>
-          <form class="mt-8 space-y-6" action="#" method="POST">
+          <form className="mt-8 space-y-6" action="#" method="POST">
             <div className=" input-group bg-[#F0EFFF] p-2">
-              <i class="fa fa-envelope text-primary !font-light"></i>
+              <i className="fa fa-envelope text-primary !font-light"></i>
               <input
                 name="email"
                 type="email"
@@ -51,7 +51,7 @@ function SignIn() {
             </div>
 
             <div className=" input-group bg-[#F0EFFF] p-2">
-              <i class="fa-solid fa-lock text-primary "></i>
+              <i className="fa-solid fa-lock text-primary "></i>
               <input
                 name="password"
                 type="password"
@@ -88,9 +88,9 @@ function SignIn() {
           <div className="mt-[-56px] text-[1.5rem]">
             <p>
               If you do not have an account you can{" "}
-              <a href="/sign-up" className="text-primary font-bold">
+              <Link to="/sign-up" className="text-primary font-bold">
                 Register Here
-              </a>
+              </Link>
             </p>
           </div>
         </div>
@@ -98,18 +98,18 @@ function SignIn() {
           <div className="mt-[7rem]">
             <p className=" float-left text-[1.5rem]">Sign Up</p>
             <div className="float-right">
-              <a href="/" className="text-primary font-semibold">
+              <Link to="/" className="text-primary font-semibold">
                 <p className=" float-left text-[1rem] mt-3 pr-1">Back Home</p>
 
                 <AiOutlineArrowRight className="float-right mt-4" />
-              </a>
+              </Link>
             </div>
           </div>
           <div className=" clear-both"></div>
           <div className="w-[100%] justify-center mx-auto">
             <form className="  mt-8 space-y-6" action="#" method="POST">
               <div className=" input-group bg-[#F0EFFF] p-2">
-                <i class="fa fa-envelope text-primary !font-light"></i>
+                <i className="fa fa-envelope text-primary !font-light"></i>
                 <input
                   name="email"
                   type="email"
@@ -119,7 +119,7 @@ function SignIn() {
               </div>
 
               <div className=" input-group bg-[#F0EFFF] p-2">
-                <i class="fa-solid fa-lock text-primary "></i>
+                <i className="fa-solid fa-lock text-primary "></i>
                 <input
                   name="password"
                   type="password"

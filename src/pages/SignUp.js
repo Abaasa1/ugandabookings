@@ -21,11 +21,11 @@ export default function SignUp() {
             <div></div>
             <p className=" float-left text-[1.5rem]">Sign Up</p>
             <div className="float-right">
-              <a href="/" className="text-primary font-semibold">
+              <Link to="/" href="/" className="text-primary font-semibold">
                 <p className=" float-left text-[1rem] mt-3 pr-1">Back Home</p>
 
                 <AiOutlineArrowRight className="float-right mt-4" />
-              </a>
+              </Link>
             </div>
           </div>
           <div className=" clear-both"></div>
@@ -34,15 +34,15 @@ export default function SignUp() {
           <div>
             <p>
               If you already have an account you can{" "}
-              <a href="/sign-in" className="text-primary font-bold">
+              <Link to="/sign-in" className="text-primary font-bold">
                 Login Here
-              </a>
+              </Link>
             </p>
           </div>
-          <form class="mt-8 space-y-6" action="#" method="POST">
+          <form className="mt-8 space-y-6" action="#" method="POST">
             <div className=" input-group">
               <label className=" block text-left ">Full name</label>
-              <i class="fa fa-users text-primary"></i>{" "}
+              <i className="fa fa-users text-primary"></i>{" "}
               <input
                 name="fname"
                 type="text"
@@ -52,7 +52,7 @@ export default function SignUp() {
             </div>
             <div className=" input-group">
               <label className=" block text-left ">Email</label>
-              <i class="fa fa-envelope text-primary !font-light"></i>
+              <i className="fa fa-envelope text-primary !font-light"></i>
               <input
                 name="email"
                 type="Email"
@@ -63,7 +63,7 @@ export default function SignUp() {
 
             <div className=" input-group">
               <label className=" block text-left ">Username</label>
-              <i class="fa fa-user text-primary !font-light"></i>
+              <i className="fa fa-user text-primary !font-light"></i>
               <input
                 name="username"
                 type="text"
@@ -73,7 +73,7 @@ export default function SignUp() {
             </div>
             <div className=" input-group">
               <label className=" block text-left ">Password</label>
-              <i class="fa-solid fa-lock text-primary "></i>
+              <i className="fa-solid fa-lock text-primary "></i>
               <input
                 name="password"
                 type="password"
@@ -105,11 +105,11 @@ export default function SignUp() {
             <div></div>
             <p className=" float-left text-[1.5rem]">Sign Up</p>
             <div className="float-right">
-              <a href="/" className="text-primary font-semibold">
+              <Link to="/" className="text-primary font-semibold">
                 <p className=" float-left text-[1rem] mt-3 pr-1">Back Home</p>
 
                 <AiOutlineArrowRight className="float-right mt-4" />
-              </a>
+              </Link>
             </div>
           </div>
           <div className=" clear-both"></div>
@@ -118,15 +118,15 @@ export default function SignUp() {
           <div>
             <p>
               If you already have an account you can{" "}
-              <a href="/sign-in" className="text-primary font-bold">
+              <Link to="/sign-in" className="text-primary font-bold">
                 Login Here
-              </a>
+              </Link>
             </p>
           </div>
-          <form class="mt-8 space-y-6" action="#" method="POST">
+          <form className="mt-8 space-y-6" action="#" method="POST">
             <div className=" input-group">
               <label className=" block text-left ">Full name</label>
-              <i class="fa fa-users text-primary"></i>{" "}
+              <i className="fa fa-users text-primary"></i>{" "}
               <input
                 name="fname"
                 type="text"
@@ -136,7 +136,7 @@ export default function SignUp() {
             </div>
             <div className=" input-group">
               <label className=" block text-left ">Email</label>
-              <i class="fa fa-envelope text-primary !font-light"></i>
+              <i className="fa fa-envelope text-primary !font-light"></i>
               <input
                 name="email"
                 type="Email"
@@ -147,7 +147,7 @@ export default function SignUp() {
 
             <div className=" input-group">
               <label className=" block text-left ">Username</label>
-              <i class="fa fa-user text-primary !font-light"></i>
+              <i className="fa fa-user text-primary !font-light"></i>
               <input
                 name="username"
                 type="text"
@@ -157,7 +157,7 @@ export default function SignUp() {
             </div>
             <div className=" input-group">
               <label className=" block text-left ">Password</label>
-              <i class="fa-solid fa-lock text-primary "></i>
+              <i className="fa-solid fa-lock text-primary "></i>
               <input
                 name="password"
                 type="password"

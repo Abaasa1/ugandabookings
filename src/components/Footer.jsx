@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <div>
-      <div class="hidden md:grid grid-rows-1 grid-flow-col gap-4 items-center justify-center mx-auto max-w-[1000px] py-5 px-2">
+      <div className="hidden md:grid grid-rows-1 grid-flow-col gap-4 items-center justify-center mx-auto max-w-[1000px] py-5 px-2">
         <div className="block max-w-[400px] ">
           <ul>
             <li>
