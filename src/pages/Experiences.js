@@ -7,16 +7,16 @@ function Experiences() {
   return (
     <div>
       <Navbar />
-      <div className="mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8 p-6 pb-8">
+      <div className="relative z-10  mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8 p-6 pb-8">
         <div className="group relative">
-          <div className="relative w-full min-h-80 bg-gray-200 !z-10 aspect-w-1 aspect-h-1 rounded-tr-md rounded-tl-md rounded-br-md overflow-hidden group-hover:opacity-75 lg:h-80 lg:aspect-none">
+          <div className="relative w-full min-h-80 bg-gray-200  aspect-w-1 aspect-h-1 rounded-tr-md rounded-tl-md rounded-br-md overflow-hidden group-hover:opacity-75 lg:h-80 lg:aspect-none">
             <img
               src={lakeVic}
               alt="Bey Resort, Lake Victoria"
-              className="w-full h-full object-center object-cover lg:w-full lg:h-full z-10"
+              className="w-full h-full object-center object-cover lg:w-full lg:h-full "
             />
           </div>
-          <div className="mt-[-44px] w-[40%] bg-white flex justify-between !z-50 relative">
+          <div className="mt-[-44px] w-[40%] bg-white flex justify-between  relative">
             <div>
               <h3 className="text-sm text-black font-semibold">
                 <a href="#">
@@ -29,14 +29,14 @@ function Experiences() {
           </div>
         </div>
         <div className="group relative">
-          <div className="relative w-full min-h-80 bg-gray-200 !z-10 aspect-w-1 aspect-h-1 rounded-tr-md rounded-tl-md rounded-br-md overflow-hidden group-hover:opacity-75 lg:h-80 lg:aspect-none">
+          <div className="relative w-full min-h-80 bg-gray-200 aspect-w-1 aspect-h-1 rounded-tr-md rounded-tl-md rounded-br-md overflow-hidden group-hover:opacity-75 lg:h-80 lg:aspect-none">
             <img
               src={gorilla}
               alt="Gorilla Tours and Travels"
-              className="w-full h-full object-center object-cover lg:w-full lg:h-full z-10"
+              className="w-full h-full object-center object-cover lg:w-full lg:h-full "
             />
           </div>
-          <div className="mt-[-44px] w-[40%] bg-white flex justify-between !z-50 relative">
+          <div className="mt-[-44px] w-[40%] bg-white flex justify-between relative">
             <div>
               <h3 className="text-sm text-black font-semibold">
                 <a href="#">
@@ -49,14 +49,14 @@ function Experiences() {
           </div>
         </div>
         <div className="group relative">
-          <div className=" relative w-full min-h-80 bg-gray-200 !z-10 aspect-w-1 aspect-h-1 rounded-tr-md rounded-tl-md rounded-br-md overflow-hidden group-hover:opacity-75 lg:h-80 lg:aspect-none">
+          <div className=" relative w-full min-h-80 bg-gray-200  aspect-w-1 aspect-h-1 rounded-tr-md rounded-tl-md rounded-br-md overflow-hidden group-hover:opacity-75 lg:h-80 lg:aspect-none">
             <img
               src={lakeVic}
               alt="Bey Resort, Lake Victoria"
-              className="w-full h-full object-center object-cover lg:w-full lg:h-full !z-10"
+              className="w-full h-full object-center object-cover lg:w-full lg:h-full "
             />
           </div>
-          <div className="mt-[-44px] w-[40%] bg-white flex justify-between !z-50 relative">
+          <div className="mt-[-44px] w-[40%] bg-white flex justify-between  relative">
             <div>
               <h3 className="text-sm text-black font-semibold">
                 <a href="#">
@@ -69,14 +69,14 @@ function Experiences() {
           </div>
         </div>
         <div className="group relative">
-          <div className="relative w-full min-h-80 bg-gray-200 !z-10 aspect-w-1 aspect-h-1 rounded-tr-md rounded-tl-md rounded-br-md overflow-hidden group-hover:opacity-75 lg:h-80 lg:aspect-none">
+          <div className="relative w-full min-h-80 bg-gray-200  aspect-w-1 aspect-h-1 rounded-tr-md rounded-tl-md rounded-br-md overflow-hidden group-hover:opacity-75 lg:h-80 lg:aspect-none">
             <img
               src={lakeVic}
               alt="Bey Resort, Lake Victoria"
-              className="w-full h-full object-center object-cover lg:w-full lg:h-full z-10"
+              className="w-full h-full object-center object-cover lg:w-full lg:h-full "
             />
           </div>
-          <div className="mt-[-44px] w-[40%] bg-white flex justify-between !z-50 relative">
+          <div className="mt-[-44px] w-[40%] bg-white flex justify-between  relative">
             <div>
               <h3 className="text-sm text-black font-semibold">
                 <a href="#">
@@ -89,14 +89,14 @@ function Experiences() {
           </div>
         </div>
         <div className="group relative">
-          <div className="relative w-full min-h-80 bg-gray-200 !z-10 aspect-w-1 aspect-h-1 rounded-tr-md rounded-tl-md rounded-br-md overflow-hidden group-hover:opacity-75 lg:h-80 lg:aspect-none">
+          <div className="relative w-full min-h-80 bg-gray-200  aspect-w-1 aspect-h-1 rounded-tr-md rounded-tl-md rounded-br-md overflow-hidden group-hover:opacity-75 lg:h-80 lg:aspect-none">
             <img
               src={gorilla}
               alt="Gorilla Tours and Travels"
-              className="w-full h-full object-center object-cover lg:w-full lg:h-full z-10"
+              className="w-full h-full object-center object-cover lg:w-full lg:h-full "
             />
           </div>
-          <div className="mt-[-44px] w-[40%] bg-white flex justify-between !z-50 relative">
+          <div className="mt-[-44px] w-[40%] bg-white flex justify-between  relative">
             <div>
               <h3 className="text-sm text-black font-semibold">
                 <a href="#">
@@ -109,14 +109,14 @@ function Experiences() {
           </div>
         </div>
         <div className="group relative">
-          <div className=" relative w-full min-h-80 bg-gray-200 !z-10 aspect-w-1 aspect-h-1 rounded-tr-md rounded-tl-md rounded-br-md overflow-hidden group-hover:opacity-75 lg:h-80 lg:aspect-none">
+          <div className=" relative w-full min-h-80 bg-gray-200   aspect-w-1 aspect-h-1 rounded-tr-md rounded-tl-md rounded-br-md overflow-hidden group-hover:opacity-75 lg:h-80 lg:aspect-none">
             <img
               src={lakeVic}
               alt="Bey Resort, Lake Victoria"
-              className="w-full h-full object-center object-cover lg:w-full lg:h-full !z-10"
+              className="w-full h-full object-center object-cover lg:w-full lg:h-full  "
             />
           </div>
-          <div className="mt-[-44px] w-[40%] bg-white flex justify-between !z-50 relative">
+          <div className="mt-[-44px] w-[40%] bg-white flex justify-between   relative">
             <div>
               <h3 className="text-sm text-black font-semibold">
                 <a href="#">
@@ -129,14 +129,14 @@ function Experiences() {
           </div>
         </div>
         <div className="group relative">
-          <div className="relative w-full min-h-80 bg-gray-200 !z-10 aspect-w-1 aspect-h-1 rounded-tr-md rounded-tl-md rounded-br-md overflow-hidden group-hover:opacity-75 lg:h-80 lg:aspect-none">
+          <div className="relative w-full min-h-80 bg-gray-200   aspect-w-1 aspect-h-1 rounded-tr-md rounded-tl-md rounded-br-md overflow-hidden group-hover:opacity-75 lg:h-80 lg:aspect-none">
             <img
               src={lakeVic}
               alt="Bey Resort, Lake Victoria"
-              className="w-full h-full object-center object-cover lg:w-full lg:h-full z-10"
+              className="w-full h-full object-center object-cover lg:w-full lg:h-full  "
             />
           </div>
-          <div className="mt-[-44px] w-[40%] bg-white flex justify-between !z-50 relative">
+          <div className="mt-[-44px] w-[40%] bg-white flex justify-between   relative">
             <div>
               <h3 className="text-sm text-black font-semibold">
                 <a href="#">
@@ -149,14 +149,14 @@ function Experiences() {
           </div>
         </div>
         <div className="group relative">
-          <div className="relative w-full min-h-80 bg-gray-200 !z-10 aspect-w-1 aspect-h-1 rounded-tr-md rounded-tl-md rounded-br-md overflow-hidden group-hover:opacity-75 lg:h-80 lg:aspect-none">
+          <div className="relative w-full min-h-80 bg-gray-200   aspect-w-1 aspect-h-1 rounded-tr-md rounded-tl-md rounded-br-md overflow-hidden group-hover:opacity-75 lg:h-80 lg:aspect-none">
             <img
               src={gorilla}
               alt="Gorilla Tours and Travels"
-              className="w-full h-full object-center object-cover lg:w-full lg:h-full z-10"
+              className="w-full h-full object-center object-cover lg:w-full lg:h-full  "
             />
           </div>
-          <div className="mt-[-44px] w-[40%] bg-white flex justify-between !z-50 relative">
+          <div className="mt-[-44px] w-[40%] bg-white flex justify-between   relative">
             <div>
               <h3 className="text-sm text-black font-semibold">
                 <a href="#">
@@ -169,14 +169,14 @@ function Experiences() {
           </div>
         </div>
         <div className="group relative">
-          <div className=" relative w-full min-h-80 bg-gray-200 !z-10 aspect-w-1 aspect-h-1 rounded-tr-md rounded-tl-md rounded-br-md overflow-hidden group-hover:opacity-75 lg:h-80 lg:aspect-none">
+          <div className=" relative w-full min-h-80 bg-gray-200   aspect-w-1 aspect-h-1 rounded-tr-md rounded-tl-md rounded-br-md overflow-hidden group-hover:opacity-75 lg:h-80 lg:aspect-none">
             <img
               src={lakeVic}
               alt="Bey Resort, Lake Victoria"
-              className="w-full h-full object-center object-cover lg:w-full lg:h-full !z-10"
+              className="w-full h-full object-center object-cover lg:w-full lg:h-full  "
             />
           </div>
-          <div className="mt-[-44px] w-[40%] bg-white flex justify-between !z-50 relative">
+          <div className="mt-[-44px] w-[40%] bg-white flex justify-between   relative">
             <div>
               <h3 className="text-sm text-black font-semibold">
                 <a href="#">
@@ -189,14 +189,14 @@ function Experiences() {
           </div>
         </div>
         <div className="group relative">
-          <div className="relative w-full min-h-80 bg-gray-200 !z-10 aspect-w-1 aspect-h-1 rounded-tr-md rounded-tl-md rounded-br-md overflow-hidden group-hover:opacity-75 lg:h-80 lg:aspect-none">
+          <div className="relative w-full min-h-80 bg-gray-200   aspect-w-1 aspect-h-1 rounded-tr-md rounded-tl-md rounded-br-md overflow-hidden group-hover:opacity-75 lg:h-80 lg:aspect-none">
             <img
               src={lakeVic}
               alt="Bey Resort, Lake Victoria"
-              className="w-full h-full object-center object-cover lg:w-full lg:h-full z-10"
+              className="w-full h-full object-center object-cover lg:w-full lg:h-full  "
             />
           </div>
-          <div className="mt-[-44px] w-[40%] bg-white flex justify-between !z-50 relative">
+          <div className="mt-[-44px] w-[40%] bg-white flex justify-between   relative">
             <div>
               <h3 className="text-sm text-black font-semibold">
                 <a href="#">
@@ -209,14 +209,14 @@ function Experiences() {
           </div>
         </div>
         <div className="group relative">
-          <div className="relative w-full min-h-80 bg-gray-200 !z-10 aspect-w-1 aspect-h-1 rounded-tr-md rounded-tl-md rounded-br-md overflow-hidden group-hover:opacity-75 lg:h-80 lg:aspect-none">
+          <div className="relative w-full min-h-80 bg-gray-200   aspect-w-1 aspect-h-1 rounded-tr-md rounded-tl-md rounded-br-md overflow-hidden group-hover:opacity-75 lg:h-80 lg:aspect-none">
             <img
               src={gorilla}
               alt="Gorilla Tours and Travels"
-              className="w-full h-full object-center object-cover lg:w-full lg:h-full z-10"
+              className="w-full h-full object-center object-cover lg:w-full lg:h-full  "
             />
           </div>
-          <div className="mt-[-44px] w-[40%] bg-white flex justify-between !z-50 relative">
+          <div className="mt-[-44px] w-[40%] bg-white flex justify-between   relative">
             <div>
               <h3 className="text-sm text-black font-semibold">
                 <a href="#">
@@ -229,14 +229,14 @@ function Experiences() {
           </div>
         </div>
         <div className="group relative">
-          <div className=" relative w-full min-h-80 bg-gray-200 !z-10 aspect-w-1 aspect-h-1 rounded-tr-md rounded-tl-md rounded-br-md overflow-hidden group-hover:opacity-75 lg:h-80 lg:aspect-none">
+          <div className=" relative w-full min-h-80 bg-gray-200   aspect-w-1 aspect-h-1 rounded-tr-md rounded-tl-md rounded-br-md overflow-hidden group-hover:opacity-75 lg:h-80 lg:aspect-none">
             <img
               src={lakeVic}
               alt="Bey Resort, Lake Victoria"
-              className="w-full h-full object-center object-cover lg:w-full lg:h-full !z-10"
+              className="w-full h-full object-center object-cover lg:w-full lg:h-full  "
             />
           </div>
-          <div className="mt-[-44px] w-[40%] bg-white flex justify-between !z-50 relative">
+          <div className="mt-[-44px] w-[40%] bg-white flex justify-between   relative">
             <div>
               <h3 className="text-sm text-black font-semibold">
                 <a href="#">

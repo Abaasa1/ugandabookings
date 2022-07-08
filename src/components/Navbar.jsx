@@ -13,7 +13,7 @@ const Navbar = () => {
     setNav(!nav);
   };
   return (
-    <div className="text-primary flex text-center justify-center drop-shadow-md w-full items-center content-center  mx-auto  bg-white ">
+    <div className="relative z-20 text-primary flex text-center justify-center drop-shadow-md w-full items-center content-center  mx-auto  bg-white ">
       <div className="big-screen w-full text-center justify-center hidden md:flex">
         <ul className="flex items-center">
           <li className="p-4">
@@ -69,10 +69,10 @@ const Navbar = () => {
           className={
             !nav
               ? "fixed left-[-100%] ease-out duration-[800]"
-              : "fixed !z-[70] left-0 top-0 w-[60%] min-h-screen bg-primary text-white border-r border-r-white ease-in-out duration-500"
+              : "fixed  left-0 top-0 w-[60%] min-h-screen bg-primary text-white border-r border-r-white ease-in-out duration-500"
           }
         >
-          <ul className="pt-24 uppercase p-4 !z-[65]">
+          <ul className="pt-24 uppercase p-4 ">
             <li className="p-4 border-b border-white-600">
               <Link to="/" onClick={handleNavBarClick}>
                 Home
