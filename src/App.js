@@ -13,6 +13,7 @@ import Experiences from "./pages/Experiences";
 import Destinations from "./pages/Destinations";
 import Blogs from "./pages/Blogs";
 import TermsAndConditions from "./pages/TermsAndConditions";
+import ContactUs from "./pages/ContactUs";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
         <Route path="/destinations" element={<Destinations />} />
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
+        <Route path="/contact-us" element={<ContactUs />} />
         <Route path="/*" element={<Error404 />} />
       </Routes>
       <Footer />
