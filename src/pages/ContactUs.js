@@ -22,7 +22,12 @@ function ContactUs() {
         console.log(res);
         console.log("we are clearing form");
         document.getElementById("contactForm").reset();
-        console.log("log has been cleared");
+        const inputFields = document.getElementsByClassName("contactfield");
+        for (let i = 0; i < inputFields.length; i++) {
+          // inputFields[i].style.backgroundColor = "red";
+          console.log(inputFields[i].value);
+          inputFields[i].value = "";
+        }
       })
       .catch((err) => console.log(err));
   }
@@ -56,7 +61,7 @@ function ContactUs() {
                 name="name"
                 type="text"
                 placeholder="Enter your full name"
-                className="w-[80%] border-b border-primary pl-2 font-normal text-left text-primary focus:text-primary focus:bg-white focus:border-blue-600 focus:outline-none"
+                className="contactfield w-[80%] border-b border-primary pl-2 font-normal text-left text-primary focus:text-primary focus:bg-white focus:border-blue-600 focus:outline-none"
               />
             </div>
             <div className=" input-group">
@@ -66,7 +71,7 @@ function ContactUs() {
                 name="email"
                 type="Email"
                 placeholder="Enter your email"
-                className="w-[80%] border-b border-primary pl-2 font-normal text-left text-primary focus:text-primary focus:bg-white focus:border-blue-600 focus:outline-none"
+                className="contactfield w-[80%] border-b border-primary pl-2 font-normal text-left text-primary focus:text-primary focus:bg-white focus:border-blue-600 focus:outline-none"
               />
             </div>
 
@@ -74,13 +79,13 @@ function ContactUs() {
               <label className=" block text-left ">Message</label>
               <textarea
                 name="message"
-                className="w-[80%] border-b border-primary pl-2 font-normal text-left text-primary focus:text-primary focus:bg-white focus:border-blue-600 focus:outline-none"
+                className="contactfield w-[80%] border-b border-primary pl-2 font-normal text-left text-primary focus:text-primary focus:bg-white focus:border-blue-600 focus:outline-none"
               ></textarea>
             </div>
             <div className=" input-group">
               <div className=" input-group align-middle w-[100%] justify-center items-center mx-auto">
                 <input
-                  className="w-[50%] mt-4 ml-[4rem] !bg-primary cursor-pointer rounded-lg text-white p-2 text-center align-middle justify-center"
+                  className=" w-[50%] mt-4 ml-[4rem] !bg-primary cursor-pointer rounded-lg text-white p-2 text-center align-middle justify-center"
                   type="submit"
                   value="Send Message"
                 />
@@ -117,7 +122,7 @@ function ContactUs() {
                 name="name"
                 type="text"
                 placeholder="Enter your full name"
-                className="w-[80%] border-b border-primary pl-2 font-normal text-left text-primary focus:text-primary focus:bg-white focus:border-blue-600 focus:outline-none"
+                className="contactfield w-[80%] border-b border-primary pl-2 font-normal text-left text-primary focus:text-primary focus:bg-white focus:border-blue-600 focus:outline-none"
               />
             </div>
             <div className=" input-group">
@@ -127,7 +132,7 @@ function ContactUs() {
                 name="email"
                 type="Email"
                 placeholder="Enter your email"
-                className="w-[80%] border-b border-primary pl-2 font-normal text-left text-primary focus:text-primary focus:bg-white focus:border-blue-600 focus:outline-none"
+                className="contactfield w-[80%] border-b border-primary pl-2 font-normal text-left text-primary focus:text-primary focus:bg-white focus:border-blue-600 focus:outline-none"
               />
             </div>
 
@@ -135,7 +140,7 @@ function ContactUs() {
               <label className=" block text-left ">Message</label>
               <textarea
                 name="message"
-                className="w-[80%] border-b border-primary pl-2 font-normal text-left text-primary focus:text-primary focus:bg-white focus:border-blue-600 focus:outline-none"
+                className="contactfield w-[80%] border-b border-primary pl-2 font-normal text-left text-primary focus:text-primary focus:bg-white focus:border-blue-600 focus:outline-none"
               ></textarea>
             </div>
 
