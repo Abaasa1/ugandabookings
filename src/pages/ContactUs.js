@@ -6,11 +6,13 @@ import { AiOutlineArrowRight, AiOutlineMail } from "react-icons/ai";
 import { FaRegEnvelope } from "react-icons/fa";
 import Navbar from "../components/Navbar";
 import emailjs from "emailjs-com";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function ContactUs() {
   function sendEmail(e) {
     e.preventDefault();
-    console.log("here we are");
+    //console.log("here we are");
     emailjs
       .sendForm(
         "service_lu57ols",
@@ -19,22 +21,55 @@ function ContactUs() {
         "user_Pe2rkTabqsB9qaxNzczeM"
       )
       .then((res) => {
-        console.log(res);
-        console.log("we are clearing form");
-        document.getElementById("contactForm").reset();
+        //console.log(res);
+        // console.log("we are clearing form");
+        //document.getElementById("contactForm").reset();
         const inputFields = document.getElementsByClassName("contactfield");
         for (let i = 0; i < inputFields.length; i++) {
           // inputFields[i].style.backgroundColor = "red";
-          console.log(inputFields[i].value);
+          //console.log(inputFields[i].value);
           inputFields[i].value = "";
         }
+
+        toast.success("Thank you for contacting us!", {
+          position: "top-center",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: false,
+          progress: undefined,
+        });
       })
-      .catch((err) => console.log(err));
+      .catch((err) => {
+        console.log(err);
+
+        toast.error("Something went wrong! Please try again later", {
+          position: "top-center",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: false,
+          progress: undefined,
+        });
+      });
   }
 
   return (
     <div>
       <Navbar />
+      <ToastContainer
+        position="top-center"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+      />
       <div className="w-full md:hidden">
         <div className=" w-[100%] justify-self-center p-5">
           <div className=" w-[100%] text-center mt-[1.75rem]">
