@@ -1,12 +1,32 @@
-import React from "react";
+import { React, useEffect, useState } from "react";
 import ugandaPicTwo from "../assets/images/uganda2.jpeg";
 import logo from "../assets/images/logo.png";
 import { Link } from "react-router-dom";
 import { AiOutlineArrowRight, AiOutlineMail } from "react-icons/ai";
 import { FaRegEnvelope } from "react-icons/fa";
 import Navbar from "../components/Navbar";
+import emailjs from "emailjs-com";
 
 function ContactUs() {
+  function sendEmail(e) {
+    e.preventDefault();
+    console.log("here we are");
+    emailjs
+      .sendForm(
+        "service_lu57ols",
+        "template_yg7g2f9",
+        e.target,
+        "user_Pe2rkTabqsB9qaxNzczeM"
+      )
+      .then((res) => {
+        console.log(res);
+        console.log("we are clearing form");
+        document.getElementById("contactForm").reset();
+        console.log("log has been cleared");
+      })
+      .catch((err) => console.log(err));
+  }
+
   return (
     <div>
       <Navbar />
@@ -24,12 +44,16 @@ function ContactUs() {
               questions or queries.
             </p>
           </div>
-          <form className="mt-8 space-y-6" action="#" method="POST">
+          <form
+            id="contactForm"
+            onSubmit={sendEmail}
+            className="mt-8 space-y-6"
+          >
             <div className=" input-group">
               <label className=" block text-left ">Full name</label>
               <i className="fa fa-users text-primary"></i>{" "}
               <input
-                name="fname"
+                name="name"
                 type="text"
                 placeholder="Enter your full name"
                 className="w-[80%] border-b border-primary pl-2 font-normal text-left text-primary focus:text-primary focus:bg-white focus:border-blue-600 focus:outline-none"
@@ -55,12 +79,11 @@ function ContactUs() {
             </div>
             <div className=" input-group">
               <div className=" input-group align-middle w-[100%] justify-center items-center mx-auto">
-                <button
-                  className="w-[50%] mt-4 ml-[4rem] !bg-primary rounded-lg text-white p-2 text-center align-middle justify-center"
+                <input
+                  className="w-[50%] mt-4 ml-[4rem] !bg-primary cursor-pointer rounded-lg text-white p-2 text-center align-middle justify-center"
                   type="submit"
-                >
-                  Send Message
-                </button>
+                  value="Send Message"
+                />
               </div>
             </div>
           </form>
@@ -82,12 +105,16 @@ function ContactUs() {
               questions or queries.
             </p>
           </div>
-          <form className="mt-8 space-y-6" action="#" method="POST">
+          <form
+            id="contactForm"
+            onSubmit={sendEmail}
+            className="mt-8 space-y-6"
+          >
             <div className=" input-group">
               <label className=" block text-left ">Full name</label>
               <i className="fa fa-users text-primary"></i>{" "}
               <input
-                name="fname"
+                name="name"
                 type="text"
                 placeholder="Enter your full name"
                 className="w-[80%] border-b border-primary pl-2 font-normal text-left text-primary focus:text-primary focus:bg-white focus:border-blue-600 focus:outline-none"
@@ -114,12 +141,11 @@ function ContactUs() {
 
             <div className=" input-group">
               <div className=" input-group align-middle w-[100%] justify-center items-center mx-auto">
-                <button
-                  className="w-[50%] mt-4 ml-[4rem] !bg-primary rounded-lg text-white p-2 text-center align-middle justify-center"
+                <input
+                  className="w-[50%] mt-4 ml-[4rem] !bg-primary cursor-pointer rounded-lg text-white p-2 text-center align-middle justify-center"
                   type="submit"
-                >
-                  Send Message
-                </button>
+                  value="Send Message"
+                />
               </div>
             </div>
           </form>
